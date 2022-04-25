@@ -287,4 +287,9 @@ export const menu = [
       },
     ],
   },
+  {
+    title: "Sobre este manual",
+    slug: "/sobre",
+    items: [],
+  },
 ];
