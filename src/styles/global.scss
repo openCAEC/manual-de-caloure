@@ -1,17 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-  --site-color: royalblue;
-  --divider-color: rgba(0, 0, 0, 0.4);
+  --pink: #ff0070;
+  --dark-pink: #a20247;
 }
 
 html {
   font-family: "Poppins", sans-serif;
   color: #353744;
   scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
 }
 
 h1,
@@ -41,11 +46,11 @@ a {
   color: inherit;
   text-decoration-color: var(--divider-color);
   text-decoration-thickness: 2px;
-  color: #ff0070;
+  color: var(--pink);
 }
 
 a:hover {
-  color: var(--site-color);
+  color: var(--dark-pink);
   text-decoration-color: currentcolor;
 }
 

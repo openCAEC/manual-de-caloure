@@ -1,0 +1,40 @@
+.next {
+  margin-top: 4rem;
+  border-radius: 15px;
+  border: 1px solid rgb(190, 190, 190);
+  position: relative;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid var(--pink);
+
+    .arrow {
+      animation: shake 0.6s linear infinite alternate;
+    }
+  }
+
+  .tag {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin: 0;
+    color: var(--pink);
+  }
+
+  .arrow {
+    margin-top: 0.4rem;
+    color: var(--pink);
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(50%, 0);
+  }
+}
