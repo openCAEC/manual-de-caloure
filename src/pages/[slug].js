@@ -10,6 +10,7 @@ import CustomLink from "../components/CustomLink";
 import Heading from "../components/Heading";
 import Layout from "../components/Layout";
 import { postFilePaths, CONTENT_PATCH } from "../utils/mdxUtils";
+import NextButton from "../components/NextButton";
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -29,17 +30,7 @@ export default function PostPage({ slug, source, frontMatter }) {
         <title>{frontMatter.title} | Manual de caloure CAEC</title>
       </Head>
       <Layout>
-        <header>
-          <nav>
-            <Link href="/">
-              <a>👈 Voltar ao início</a>
-            </Link>
-          </nav>
-        </header>
-
-        <main>
-          <MDXRemote {...source} components={components} />
-        </main>
+        <MDXRemote {...source} components={components} />
 
         <style jsx>{`
           .post-header h1 {
@@ -53,6 +44,7 @@ export default function PostPage({ slug, source, frontMatter }) {
             opacity: 0.6;
           }
         `}</style>
+        <NextButton slug={slug} />
       </Layout>
     </>
   );
