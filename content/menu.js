@@ -49,6 +49,10 @@ export const menu = [
         id: "sae-servico-de-apoio-ao-estudante",
       },
       {
+        title: "Programas de Assistência Estudantil",
+        id: "programas-de-assistencia-estudantil",
+      },
+      {
         title: "Cuidando da Saúde física",
         id: "cuidando-da-saude-fisica",
       },
