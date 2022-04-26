@@ -19,7 +19,8 @@ import NextButton from "../components/NextButton";
 const components = {
   a: CustomLink,
   h2: Heading,
-  TestComponent: dynamic(() => import("../components/TestComponent")),
+  AlertBox: dynamic(() => import("../components/AlertBox")),
+  NoIntent: dynamic(() => import("../components/NoIntent")),
   Head,
 };
 
