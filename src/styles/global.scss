@@ -33,7 +33,16 @@ h1 {
 }
 
 h2 {
-  margin: 3rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
+}
+
+h3 {
+  margin: 2rem 0 1rem 0;
+}
+
+h4 {
+  margin: 2rem 0 1rem 0;
+  color: var(--pink);
 }
 
 p {
@@ -63,6 +72,45 @@ li p {
   text-indent: 0;
 }
 
+li {
+  margin-top: 0.4rem;
+}
+
 code {
   font-family: "Menlo";
+}
+
+img {
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--pink);
+  color: white;
 }
